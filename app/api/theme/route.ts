@@ -337,7 +337,7 @@ IMPORTANT: Respond ONLY with the JavaScript function 'applyThemeChanges' wrapped
         headers: {
           Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
           "HTTP-Referer": "https://rushikeshnimkar.xyz",
-          "X-Title": "Rushikesh's Portfolio",
+          "X-Title": "Rifky's Portfolio",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({

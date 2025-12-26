@@ -61,8 +61,8 @@ class OpenRouterChatModel extends ChatOpenAI {
                     method: "POST",
                     headers: {
                         Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
-                        "HTTP-Referer": "https://rushikeshnimkar.xyz",
-                        "X-Title": "Rushikesh's Portfolio",
+                        "HTTP-Referer": "https://rifkyseawn.github.io/rifkysstore.github.io/",
+                        "X-Title": "Rifky's Portfolio",
                         "Content-Type": "application/json",
                     },
                     body: JSON.stringify({
@@ -127,12 +127,12 @@ export class ChatWorkflow {
 
         try {
             // Use a lightweight call to rewrite the query
-            // For now, we'll just append "Rushikesh Nimkar" if it seems to be about the person
+            // For now, we'll just append "Rifky Setiawan" if it seems to be about the person
             // In a more advanced version, we'd call the LLM to rewrite it
             if (
                 /\b(projects|skills|experience|contact|resume|cv)\b/i.test(currentQuery)
             ) {
-                return `Rushikesh Nimkar ${currentQuery}`;
+                return `Rifky Setiawan ${currentQuery}`;
             }
             return currentQuery;
         } catch (error) {
@@ -184,7 +184,7 @@ export class ChatWorkflow {
         }
 
         // 4. Construct System Prompt
-        let systemContent = `You are Rushikesh Nimkar, a full-stack developer with expertise in Java, React.js, Next.js, and MySQL.`;
+        let systemContent = `You are Rifky Setiawan, a Data Scientist & AI Engineer focused on ML pipelines, analytics, and modern web experiences.`;
 
         if (structuredContent) {
             systemContent += ` For this query, provide a VERY BRIEF conversational introduction only. DO NOT list specific details like skills, projects, contact info, or links - these will be displayed separately in a structured format. Keep your response to 1-2 sentences maximum.`;
@@ -205,7 +205,7 @@ export class ChatWorkflow {
         }
 
         systemContent += `\n\nRules:
-    1. Speak as Rushikesh using "I" and "my"
+    1. Speak as Rifky using "I" and "my"
     2. Keep responses concise and focused
     3. If unsure about specific details, say "Feel free to contact me directly for more information"
     4. Use web search results when provided for up-to-date information

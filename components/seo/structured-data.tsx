@@ -6,17 +6,17 @@ export function PersonSchema() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Rushikesh Nimkar",
-          url: "https://rushikeshnimkar.com",
+          name: "Rifky Setiawan",
+          url: "https://rifkyseawn.github.io/rifkysstore.github.io/",
           sameAs: [
-            "https://github.com/Rushikeshnimkar",
-            "https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/",
-            "https://x.com/RushikeshN22296"
+            "https://github.com/rifkyseawn",
+            "https://www.linkedin.com/in/setiawanrifky/",
+            "https://www.instagram.com/riffkyys/"
           ],
-          jobTitle: "Full Stack Developer",
-          knowsAbout: ["Web Development", "Blockchain", "TypeScript", "React", "Next.js"],
+          jobTitle: "Data Scientist & AI Engineer",
+          knowsAbout: ["Machine Learning", "Analytics", "Data Engineering", "Next.js", "Python"],
           image: "/profile.jpg",
-          description: "Full Stack Developer specializing in Next.js, TypeScript, and Blockchain development."
+          description: "Data Scientist & AI Engineer focusing on ML pipelines, analytics, and modern web experiences."
         })
       }}
     />

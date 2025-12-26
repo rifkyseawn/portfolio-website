@@ -8,31 +8,31 @@ export function ProfileImagesSchema() {
           "@type": "ImageGallery",
           mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": "https://rushikeshnimkar.com",
+            "@id": "https://rifkyseawn.github.io/rifkysstore.github.io/",
           },
           about: {
             "@type": "Person",
-            name: "Rushikesh Nimkar",
+            name: "Rifky Setiawan",
             description:
-              "Full Stack Developer specializing in Next.js, TypeScript, and Blockchain development.",
+              "Data Scientist & AI Engineer focusing on ML pipelines, analytics, and modern web experiences.",
           },
           associatedMedia: [
             {
               "@type": "ImageObject",
-              contentUrl: "https://rushikeshnimkar.com/rushikesh_nimkar.jpg",
-              name: "Rushikesh Nimkar - Full Stack Developer Primary Profile",
+              contentUrl: "https://rifkyseawn.github.io/rifkysstore.github.io/rushikesh_nimkar.jpg",
+              name: "Rifky Setiawan - Data Scientist & AI Engineer Primary Profile",
               description:
-                "Primary profile photo of Rushikesh Nimkar, Full Stack Developer",
+                "Primary profile photo of Rifky Setiawan, Data Scientist & AI Engineer",
               encodingFormat: "image/jpeg",
               width: "800",
               height: "800",
             },
             {
               "@type": "ImageObject",
-              contentUrl: "https://rushikeshnimkar.com/profile.jpg",
-              name: "Rushikesh Nimkar - Full Stack Developer Alternate Profile",
+              contentUrl: "https://rifkyseawn.github.io/rifkysstore.github.io/profile.jpg",
+              name: "Rifky Setiawan - Data Scientist & AI Engineer Alternate Profile",
               description:
-                "Secondary profile photo of Rushikesh Nimkar, showcasing professional appearance",
+                "Secondary profile photo of Rifky Setiawan, showcasing professional appearance",
               encodingFormat: "image/jpeg",
               width: "800",
               height: "800",

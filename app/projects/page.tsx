@@ -7,7 +7,7 @@ import Head from "next/head";
 
 // SEO keywords and descriptions
 const SEO = {
-  title: "Rushikesh Nimkar | Projects Portfolio",
+  title: "Rifky Setiawan | Projects Portfolio",
   description:
     "Explore my portfolio of web development and software engineering projects. Featuring Next.js, React, TypeScript, and blockchain applications.",
   keywords:
@@ -32,56 +32,107 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "CryptoRage",
+    title: "Image Classification Website",
     description:
-      "Cryptorage is a Chrome extension that integrates with Sui wallet to provide secure storage and sharing of screenshots within teams. It allows users to capture, store, and share screenshots with team members, all while leveraging blockchain technology for enhanced security and transparency.",
+      "Deployed a computer vision model with an intuitive web layer so non-technical teams can classify images easily.",
     media: {
       type: "image",
       src: "/projects/cryptorage.webp",
     },
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    link: "https://cryptorage-login.vercel.app/",
-    github: "https://github.com/Rushikeshnimkar/CryptoRage",
+    tags: ["TensorFlow", "Python", "Flask", "Computer Vision"],
+    link: "https://github.com/rifkyseawn/image-classification",
+    github: "https://github.com/rifkyseawn/image-classification",
   },
   {
     id: 2,
-    title: "GitSplit",
+    title: "Public Sentiment Analysis",
     description:
-      "A Web App for Open-Source projects to raise funding and split among its contributors. Discover and Showcase your projects on this platform.",
+      "End-to-end pipeline on tuition fee increase discussions: scraping, cleaning, sentiment modeling, and reporting.",
     media: {
       type: "image",
       src: "/projects/gitsplit.webp",
     },
-    tags: ["React", "Next.js", "Tailwind", "SQL", "Golang"],
-    link: "",
-    github: "https://github.com/GitSplit-org",
+    tags: ["NLP", "Sentiment", "Python", "Data Pipeline"],
+    link: "https://drive.google.com/file/d/1MUPJh2KcA7rjHH2Y7umKUtOx-IM4F_LR/view",
+    github: "https://drive.google.com/file/d/1MUPJh2KcA7rjHH2Y7umKUtOx-IM4F_LR/view",
   },
   {
     id: 3,
-    title: "Communepro",
+    title: "Queue Time Prediction",
     description:
-      "Communepro is a modern, customizable NPM package that provides a comment section component for React applications. It offers features like nested replies, real-time updates, dark mode support, and a responsive design, making it easy to enhance your app with an intuitive and engaging commenting experience.",
+      "Gradient boosting model that forecasts healthcare wait times to improve patient flow and staffing decisions.",
     media: {
       type: "image",
       src: "/projects/communepro.webp",
     },
-    tags: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-    link: "https://communepro.vercel.app/",
-    github: "https://www.npmjs.com/package/addcomment",
+    tags: ["Gradient Boosting", "Healthcare", "Python", "Analytics"],
+    link: "https://drive.google.com/file/d/1vZWNW8R1qihkyjWXMFkOn4iqye_OPEYb/view",
+    github: "https://drive.google.com/file/d/1vZWNW8R1qihkyjWXMFkOn4iqye_OPEYb/view",
   },
   {
     id: 4,
-    title: "Terminal AI Assistant",
+    title: "Book Management Application",
     description:
-      "A powerful CLI tool that helps users interact with the Windows command line using natural language. Built with Node.js and powered by Qwen: Qwen2.5 VL 72B Instruct AI.",
+      "Inventory management web app with clean UX, offline-first mindset, and API integrations.",
     media: {
-      type: "youtube",
-      src: "https://youtu.be/TwaQDbr75z4",
+      type: "image",
+      src: "/projects/cryptorage.webp",
     },
-    tags: ["Node.js", "TypeScript", "Qwen AI", "Commander.js", "Chalk"],
-    link: "https://www.npmjs.com/package/terminal-ai-assistant",
-    github:
-      "https://github.com/Rushikeshnimkar/terminal-ai-assistant-windows.git",
+    tags: ["React", "CRUD", "API", "UI/UX"],
+    link: "https://github.com/rifkyseawn/gdgoc-rifky",
+    github: "https://github.com/rifkyseawn/gdgoc-rifky",
+  },
+  {
+    id: 5,
+    title: "Business Website",
+    description:
+      "Corporate-ready site with lead capture and scalable CMS-friendly content model.",
+    media: {
+      type: "image",
+      src: "/projects/gitsplit.webp",
+    },
+    tags: ["Next.js", "Landing Page", "Design System"],
+    link: "https://github.com/rifkyseawn/business-website",
+    github: "https://github.com/rifkyseawn/business-website",
+  },
+  {
+    id: 6,
+    title: "E-Commerce Auction Website",
+    description:
+      "Bid-based commerce experience with secure authentication and bidding logic.",
+    media: {
+      type: "image",
+      src: "/projects/communepro.webp",
+    },
+    tags: ["E-commerce", "Auction", "Auth", "React"],
+    link: "https://github.com/rifkyseawn/ecommerce",
+    github: "https://github.com/rifkyseawn/ecommerce",
+  },
+  {
+    id: 7,
+    title: "Apple Vision Website Clone",
+    description:
+      "Responsive clone highlighting product storytelling with smooth animations.",
+    media: {
+      type: "image",
+      src: "/projects/cryptorage.webp",
+    },
+    tags: ["Landing Page", "Animation", "Responsive"],
+    link: "http://apple-vision.infy.uk/",
+    github: "http://apple-vision.infy.uk/",
+  },
+  {
+    id: 8,
+    title: "Rifky's Store - Sports E-Commerce Platform",
+    description:
+      "Sports storefront with clean UX, product browsing, and lightweight checkout flow.",
+    media: {
+      type: "image",
+      src: "/projects/gitsplit.webp",
+    },
+    tags: ["Storefront", "Responsive", "E-commerce"],
+    link: "https://rifkyseawn.github.io/rifkysstore.github.io/",
+    github: "https://rifkyseawn.github.io/rifkysstore.github.io/",
   },
 ];
 
@@ -170,9 +221,9 @@ export default function Projects() {
       keywords: SEO.keywords,
       mainEntity: {
         "@type": "Person",
-        name: "Rushikesh Nimkar",
-        url: "https://github.com/Rushikeshnimkar",
-        sameAs: ["https://github.com/Rushikeshnimkar"],
+        name: "Rifky Setiawan",
+        url: "https://github.com/rifkyseawn",
+        sameAs: ["https://github.com/rifkyseawn"],
       },
     };
 

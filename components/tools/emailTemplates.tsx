@@ -43,7 +43,7 @@ export const emailTemplates: EmailTemplate[] = [
     title: "Hire Me",
     icon: "💼",
     description: "Recruitment inquiry",
-    prompt: `Write a professional email as a tech recruiter reaching out to hire Rushikesh Nimkar. Include these details:
+    prompt: `Write a professional email as a tech recruiter reaching out to hire Rifky Setiawan. Include these details:
   
   My name is [Your Name]
   Position: Technical Recruiter
@@ -52,13 +52,13 @@ export const emailTemplates: EmailTemplate[] = [
   Location: [City, Country] (Remote/Hybrid/On-site)
   
   Role Details:
-  - Position: Full Stack Developer
+  - Position: Data Scientist / AI Engineer
   - Level: [Junior/Mid/Senior]
-  - Tech Stack: React, TypeScript, Node.js, Blockchain
+  - Tech Stack: Python, ML, Analytics, Next.js
   - Salary Range: [Amount] per year
   - Benefits: Health insurance, stock options, flexible hours, etc.
   
-  I've reviewed your portfolio projects (CryptoRage and GitSplit) and your experience with modern web technologies and blockchain development aligns perfectly with what we're looking for. Let's schedule a call to discuss this opportunity in detail.`,
+  I've reviewed your portfolio projects (Image Classification, Sentiment Analysis, Queue Prediction) and your experience with machine learning and modern web technologies aligns well with our role. Let's schedule a call to discuss this opportunity in detail.`,
     tags: ["Recruitment", "Business"],
   },
   {

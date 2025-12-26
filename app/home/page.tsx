@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Head from "next/head";
 import MagneticButton from "@/components/ui/magnetic-button";
 import { TextReveal } from "@/components/ui/text-reveal";
@@ -14,13 +13,13 @@ import { TiltCard } from "@/components/ui/tilt-card";
 const imageMetadata = {
   profile1: {
     url: "/rushikesh_nimkar.jpg",
-    alt: "Rushikesh Nimkar - Full Stack Developer Primary Profile",
+    alt: "Rifky Setiawan - Data Scientist & AI Engineer Primary Profile",
     width: 800,
     height: 800,
   },
   profile2: {
     url: "/profile.jpg",
-    alt: "Rushikesh Nimkar - Full Stack Developer Alternate Profile",
+    alt: "Rifky Setiawan - Data Scientist & AI Engineer Alternate Profile",
     width: 800,
     height: 800,
   },
@@ -48,15 +47,15 @@ export default function HomePage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Rushikesh Nimkar",
-              url: "https://rushikeshnimkar.com",
+              name: "Rifky Setiawan",
+              url: "https://rifkyseawn.github.io/rifkysstore.github.io/",
               image: [
-                `https://rushikeshnimkar.com${imageMetadata.profile1.url}`,
-                `https://rushikeshnimkar.com${imageMetadata.profile2.url}`,
+                `https://rifkyseawn.github.io/rifkysstore.github.io${imageMetadata.profile1.url}`,
+                `https://rifkyseawn.github.io/rifkysstore.github.io${imageMetadata.profile2.url}`,
               ],
-              jobTitle: "Full Stack Developer",
+              jobTitle: "Data Scientist & AI Engineer",
               description:
-                "Full Stack Developer specializing in Next.js, TypeScript, and Blockchain development.",
+                "Data Scientist & AI Engineer building ML pipelines, analytics, and intuitive experiences.",
             }),
           }}
         />
@@ -167,7 +166,7 @@ export default function HomePage() {
             <div id="home-title" className="text-2xl sm:text-4xl md:text-6xl lg:text-6xl font-bold">
               <span className="text-white">Hi, I&apos;m</span> <br className="hidden sm:block" />
               <TextReveal
-                text="Rushikesh Nimkar"
+                text="Rifky Setiawan"
                 className="text-blue-500"
                 delay={0.5}
               />
@@ -175,7 +174,7 @@ export default function HomePage() {
 
             <div id="home-subtitle" className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400">
               <TextReveal
-                text="Full Stack Developer | Tech Enthusiast"
+                text="Data Scientist & AI Engineer"
                 className="text-gray-400"
                 delay={1.5}
               />
@@ -188,10 +187,10 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               transition={{ delay: 2.5 }}
             >
-              I turn coffee into code and bugs into features. Full-stack
-              developer who enjoys building digital puzzles and occasionally
-              solving them. Currently exploring blockchain, because why not add
-              more blocks to my stacks?
+              I design and ship data-driven products—combining ML engineering,
+              analytics, and modern web stacks to automate workflows, surface
+              insights, and create intuitive experiences. Current focus:
+              translating business intent into production-grade APIs and dashboards.
             </motion.p>
 
             <motion.div
@@ -252,13 +251,13 @@ export default function HomePage() {
                     <button
                       onClick={() =>
                         window.open(
-                          "https://github.com/sponsors/Rushikeshnimkar",
+                          "mailto:rifkysetiawan@mail.ugm.ac.id",
                           "_blank"
                         )
                       }
                       className="relative z-10 w-full px-6 py-[6px] flex items-center justify-center gap-2 text-sm md:text-base"
                     >
-                      <span className="text-white">Sponsor</span>
+                      <span className="text-white">Email me</span>
                       <svg
                         height="16"
                         viewBox="0 0 16 16"
@@ -283,7 +282,7 @@ export default function HomePage() {
               >
                 <MagneticButton>
                   <a
-                    href="https://github.com/Rushikeshnimkar"
+                    href="https://github.com/rifkyseawn"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-blue-500 transition-colors duration-300 block p-2"
@@ -293,7 +292,7 @@ export default function HomePage() {
                 </MagneticButton>
                 <MagneticButton>
                   <a
-                    href="https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/"
+                    href="https://www.linkedin.com/in/setiawanrifky/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-blue-500 transition-colors duration-300 block p-2"
@@ -303,22 +302,12 @@ export default function HomePage() {
                 </MagneticButton>
                 <MagneticButton>
                   <a
-                    href="https://x.com/RushikeshN22296"
+                    href="https://www.instagram.com/riffkyys/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-blue-500 transition-colors duration-300 block p-2"
                   >
-                    <FaXTwitter size={24} />
-                  </a>
-                </MagneticButton>
-                <MagneticButton>
-                  <a
-                    href="https://discord.com/users/748192618659315753"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-blue-500 transition-colors duration-300 block p-2"
-                  >
-                    <FaDiscord size={24} />
+                    <FaInstagram size={24} />
                   </a>
                 </MagneticButton>
               </motion.div>

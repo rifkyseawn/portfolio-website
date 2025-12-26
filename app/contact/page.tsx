@@ -650,7 +650,7 @@ export default function Contact() {
                         value={senderName}
                         onChange={(e) => setSenderName(e.target.value)}
                         className="w-full bg-neutral-800/40 border border-indigo-500/20 rounded-lg px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 transition-all"
-                        placeholder="Rushikesh Nimkar"
+                        placeholder="Rifky Setiawan"
                       />
                     </div>
                     <div>

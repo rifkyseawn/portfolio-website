@@ -1,5 +1,5 @@
 "use client";
-import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDiscord, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export function Footer() {
@@ -12,7 +12,7 @@ export function Footer() {
           {/* Social Links */}
           <div className="flex space-x-6">
             <a
-              href="https://github.com/Rushikeshnimkar"
+              href="https://github.com/rifkyseawn"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-blue-500 transition-colors"
@@ -20,7 +20,7 @@ export function Footer() {
               <FaGithub size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/"
+              href="https://www.linkedin.com/in/setiawanrifky/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-blue-500 transition-colors"
@@ -28,7 +28,7 @@ export function Footer() {
               <FaLinkedin size={20} />
             </a>
             <a
-              href="https://twitter.com/RushikeshNimkar"
+              href="mailto:rifkysetiawan@mail.ugm.ac.id"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-blue-500 transition-colors"
@@ -36,18 +36,18 @@ export function Footer() {
               <FaXTwitter size={20} />
             </a>
             <a
-              href="https://discord.com/users/748192618659315753"
+              href="https://www.instagram.com/riffkyys/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-blue-500 transition-colors"
             >
-              <FaDiscord size={24} />
+              <FaInstagram size={20} />
             </a>
           </div>
 
           {/* Copyright */}
           <div className="text-neutral-500 text-sm">
-            <p>© {currentYear} Rushikesh Nimkar</p>
+            <p>© {currentYear} Rifky Setiawan</p>
           </div>
         </div>
       </div>

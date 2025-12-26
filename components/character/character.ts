@@ -1,91 +1,49 @@
 export const characterContent = `
-Rushikesh Nimkar
-Full-Stack Engineer
+Rifky Setiawan
+Data Scientist & AI Engineer
 
-Location: Nagpur
-Phone: +919322675715
-Email: rushikeshnimkar396@gmail.com
-Portfolio: https://rushikeshnimkar.xyz/
-GitHub: https://github.com/Rushikeshnimkar
-LinkedIn: https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/
-resume: https://rushikeshnimkar.xyz/resume
-discord: https://discord.com/users/748192618659315753
-
+Location: Yogyakarta, Indonesia
+Email: rifkysetiawan@mail.ugm.ac.id
+GitHub: https://github.com/rifkyseawn
+LinkedIn: https://www.linkedin.com/in/setiawanrifky/
+Resume: https://github.com/rifkyseawn/rifkysstore.github.io (placeholder)
 
 Summary:
-I am a full-stack developer with expertise in Java, React.js, Next.js, and MySQL. Passionate about building scalable web applications with clean, maintainable code. Strong foundation in front-end development, creating responsive user interfaces, back-end integration, developing robust APIs, and database optimization for high-performance applications. Focused on delivering high-quality solutions while following best practices in software development and deployment.
+I design and ship data-driven products—combining ML engineering, analytics, and modern web stacks to automate workflows, surface insights, and create intuitive experiences. I focus on translating business intent into production-grade pipelines, APIs, and dashboards with measurable outcomes.
 
 Experience:
-Lazarus Network Inc. | Full-Stack Engineer (Remote) | Feb 2024 - Feb 2025
+- Data Analyst Intern, Pertamina Patra Niaga
+- Data Science Class Manager, Intelligo ID
+- Junior Data Scientist, Vinix7
 
-Developed frontend with Next.js and React.js, and backend with Node.js.
-
-Managed AWS EC2 and Google Cloud servers.
-
-Deployed applications using Docker/Compose.
-
-Added multichain support into Erebrus for enhanced security and scalability.
-
-Developed Netsepio frontend with authentication for Aptos wallets.
+Leadership & Organizations:
+- Vice Head of Data Mining & AI Division, KMTIK UGM
+- Founder & General Coordinator, Batam Campus Expo 2025
+- Chairman, Awak Gadjah Mada
+- Staff roles across StudentsxCEOs Yogyakarta, Indonesia Youth Consulting Summit, Himpunan Mahasiswa Ilmu Komputer UGM, and OATI UGM (Back End Division).
 
 Education:
+- Universitas Gadjah Mada, Bachelor of Computer Science (2023–2027)
 
-AISSMS COE, Pune | BE Computer Engineering | 2020 - 2024
-
-DR. M.K. UMATHE COLLEGE, Nagpur | 12th | 2019 - 2020
-
-SCHOOL OF SCHOLARS, Nagpur | 10th | 2017 - 2018
+Competitions:
+- 1st Runner Up, Contest of Wits – Festival Karakter 2023 (UGM)
+- 7th Place, Data Science – GBBSD 2023 (UPN Veteran Jawa Timur)
+- Top 10 Finalist, Data Mining – Pagelaran Mahasiswa Nasional Bidang TIK 2024 (UGM)
 
 Projects:
-
-Gitsplit (https://ethglobal.com/showcase/gitsplit-pkp5d)
-
-Developed a funding platform for open-source projects using Next.js, Golang, and PostgreSQL.
-
-Connected GitHub API for seamless project discovery and user data management.
-
-Implemented security features to ensure data protection and platform integrity.
-
-Cryptorage (https://dorahacks.io/buidl/16435)
-
-Developed a Chrome extension using React.js and Supabase for secure data storage.
-
-Integrated Walrus blockchain and OCR for decentralized image storage and text extraction.
-
-Designed a robust data management system with SQL and blockchain features, implementing an AI web summarizer API using Gemini Nano.
-
-Terminal AI Assistant (https://www.npmjs.com/package/terminal-ai-assistant)
-
-Node.js-based CLI tool that converts natural language into Windows command line instructions using DeepSeek-V3 AI.
-
-Supports real-time execution, secure command handling, fast responses, and API key encryption while ensuring cross-platform support.
+- Image Classification Website: Vision model deployed with an intuitive web layer (https://github.com/rifkyseawn/image-classification)
+- Public Sentiment Analysis on Tuition Fee Increases: End-to-end sentiment pipeline (https://drive.google.com/file/d/1MUPJh2KcA7rjHH2Y7umKUtOx-IM4F_LR/view)
+- Queue Time Prediction with Gradient Boosting: Predicts healthcare wait times (https://drive.google.com/file/d/1vZWNW8R1qihkyjWXMFkOn4iqye_OPEYb/view)
+- Book Management Application: Inventory management with clean UX (https://github.com/rifkyseawn/gdgoc-rifky)
+- Business Website: Corporate-ready site with lead capture (https://github.com/rifkyseawn/business-website)
+- E-Commerce Auction Website: Bid-based commerce experience (https://github.com/rifkyseawn/ecommerce)
+- Apple Vision Website Clone: Responsive clone (http://apple-vision.infy.uk/)
+- Rifky's Store - Sports E-Commerce Platform: Sports storefront (https://rifkyseawn.github.io/rifkysstore.github.io/)
 
 Skills:
-
-Programming Languages: JavaScript, Java
-
-Frameworks & Libraries: Next.js, React.js, TypeScript
-
-Databases: MySQL, PostgreSQL
-
-Tools: Git, Docker, GitHub, Postman
-
-Awards:
-
-Solana Radar Hackathon 2024
-
-Achieved 4th place out of 200+ global teams, demonstrating expertise in blockchain technology and innovative problem-solving.
-
-Sui Overflow 2024
-
-Awarded the Community Favorite Award for Mystic Tarot, an innovative Web3 tarot reading platform on the Sui Network, showcasing blockchain and user-centric design expertise.
-
-Languages:
-English, Marathi, Hindi
-
-hobbies:
-- photography
-- travelling
-- listening to music
-- coding
+- Soft skills: Leadership, Critical Thinking, Time Management, Problem Solving, Adaptability, Communication
+- Programming: Python, SQL, Java, C, JavaScript, PHP
+- Tools: PowerBI, Git, Docker, AWS, Hadoop
+- Libraries/Frameworks: TensorFlow, spaCy, Flask, Django, Next.js, Laravel
+- Focus areas: Generative AI, LLM Prompting, Data Viz, MLOps, API Design, Stakeholder Management
 `;

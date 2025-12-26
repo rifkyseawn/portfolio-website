@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function ResumePage() {
   const [mounted, setMounted] = useState(false);
-  const nameLetters = "Rushikesh Nimkar Resume ".split("");
+  const nameLetters = "Rifky Setiawan Resume ".split("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -183,7 +183,7 @@ export default function ResumePage() {
                       </div>
                       <div className="flex gap-3 flex-wrap">
                         <a
-                          href="https://github.com/Rushikeshnimkar"
+                          href="https://github.com/rifkyseawn"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-neutral-700 transition-colors"
@@ -202,7 +202,7 @@ export default function ResumePage() {
                           </svg>
                         </a>
                         <a
-                          href="https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/"
+                          href="https://www.linkedin.com/in/setiawanrifky/"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-neutral-700 transition-colors"
@@ -217,7 +217,7 @@ export default function ResumePage() {
                           </svg>
                         </a>
                         <a
-                          href="https://x.com/RushikeshN22296"
+                          href="mailto:rifkysetiawan@mail.ugm.ac.id"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-neutral-700 transition-colors"

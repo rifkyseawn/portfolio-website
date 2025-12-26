@@ -214,7 +214,7 @@ async function initializeVectorStore() {
 
     // Test a query to verify it works
     console.log("Testing a query...");
-    const testQuery = "What are Rushikesh's skills?";
+    const testQuery = "What are Rifky's skills?";
     const results = await vectorStore.similaritySearch(testQuery, 2);
     console.log("Test query results:");
     results.forEach((result, i) => {
