@@ -167,6 +167,12 @@ JWT_EXPIRY="1m"
 JWT_SECRET="your jwt token" # use this command for linux = "openssl rand -hex 64" or node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"  (works on windows/linux/mac)
 ```
 
+### CI / Vercel builds
+
+- The embedding scripts now auto-skip in CI/Vercel if `PINECONE_API_KEY` or `GOOGLE_API_KEY` are missing so builds do not fail.
+- To bypass them locally, set `SKIP_VECTOR_SETUP=true` in your environment.
+- To enable AI chat/theme features in production, add `PINECONE_API_KEY`, `PINECONE_INDEX_NAME`, and `GOOGLE_API_KEY` to your Vercel project settings.
+
 ## Vector Store Configuration
 
 The vector store is configured in `lib/embeddings.ts` with the following settings:

@@ -19,6 +19,32 @@ console.log("GOOGLE_API_KEY exists:", !!process.env.GOOGLE_API_KEY);
 
 import { getEmbeddings } from "../lib/embeddings.js";
 
+function shouldSkipInitialization() {
+  const missingEnvVars = ["PINECONE_API_KEY", "GOOGLE_API_KEY"].filter(
+    (key) => !process.env[key]
+  );
+
+  const skipRequested = process.env.SKIP_VECTOR_SETUP === "true";
+  const isCi = process.env.CI === "true" || process.env.VERCEL === "1";
+
+  if (missingEnvVars.length > 0 && (isCi || skipRequested)) {
+    console.warn(
+      `Skipping vector store initialization (${isCi ? "CI" : "local skip"}). Missing env vars: ${missingEnvVars.join(
+        ", "
+      )}`
+    );
+    return true;
+  }
+
+  if (missingEnvVars.length > 0) {
+    throw new Error(
+      `Missing required environment variables: ${missingEnvVars.join(", ")}`
+    );
+  }
+
+  return false;
+}
+
 // Helper function to split text into chunks
 function splitTextIntoChunks(text: string, chunkSize: number): string[] {
   const chunks: string[] = [];
@@ -76,6 +102,10 @@ function splitTextIntoChunks(text: string, chunkSize: number): string[] {
 // Main function to initialize the vector store
 async function initializeVectorStore() {
   try {
+    if (shouldSkipInitialization()) {
+      return null;
+    }
+
     // Check if API keys are available
     if (!process.env.PINECONE_API_KEY) {
       throw new Error(

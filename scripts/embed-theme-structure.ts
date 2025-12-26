@@ -148,7 +148,33 @@ Support for dark mode and glass-morphism effects.
 Gradient and blur effects for visual enhancement.
 `;
 
-/*
+function shouldSkipEmbedding() {
+  const missingEnvVars = ["PINECONE_API_KEY", "GOOGLE_API_KEY"].filter(
+    (key) => !process.env[key]
+  );
+
+  const skipRequested = process.env.SKIP_VECTOR_SETUP === "true";
+  const isCi = process.env.CI === "true" || process.env.VERCEL === "1";
+
+  if (missingEnvVars.length > 0 && (isCi || skipRequested)) {
+    console.warn(
+      `Skipping theme embedding (${isCi ? "CI" : "local skip"}). Missing env vars: ${missingEnvVars.join(
+        ", "
+      )}`
+    );
+    return true;
+  }
+
+  if (missingEnvVars.length > 0) {
+    throw new Error(
+      `Missing required environment variables: ${missingEnvVars.join(", ")}. Please add them to your .env file.`
+    );
+  }
+
+  return false;
+}
+
+/* 
 // Option 2: Load content from a file (e.g., page-content.txt in the same directory)
 const contentFilePath = path.join(__dirname, 'page-content.txt');
 let pageContent = '';
@@ -164,6 +190,10 @@ try {
 // --- Main Embedding Function ---
 async function embedAndStoreThemeStructure() {
   try {
+    if (shouldSkipEmbedding()) {
+      return;
+    }
+
     // --- 1. Validate API Keys ---
     if (!process.env.PINECONE_API_KEY) {
       throw new Error(
