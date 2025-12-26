@@ -13,7 +13,7 @@ export function CursorGlow() {
   const rawY = useMotionValue(0);
   const x = useSpring(rawX, { stiffness: 50, damping: 18, mass: 0.8 });
   const y = useSpring(rawY, { stiffness: 50, damping: 18, mass: 0.8 });
-  const frame = useRef<number>();
+  const frame = useRef<number | null>(null);
 
   useEffect(() => {
     const handleMove = (e: MouseEvent) => {
